@@ -1,0 +1,35 @@
+/* Seleciona o corpo da página para aplicar os estilos gerais */
+body { 
+    
+    /* Define a fonte padrão como Arial (ou similar) */
+    font-family: Arial, sans-serif; 
+    
+    /* Centraliza todo o conteúdo da página (título, formulário e textos) de forma simples */
+    text-align: center; 
+    
+    /* Cria um espaço de 50 pixels no topo para que o login não fique colado na borda superior da tela */
+    padding-top: 50px; 
+    
+/* Fecha as regras do body */
+}
+
+/* Seleciona especificamente os elementos que têm a classe 'campo-entrada' (nossos dois inputs do formulário) */
+.campo-entrada {
+    
+    /* Adiciona um respiro interno de 10 pixels para o texto digitado não encostar nas bordas do campo */
+    padding: 10px; 
+    
+    /* Cria um espaço externo de 10 pixels ao redor do campo, afastando-o dos outros elementos */
+    margin: 10px; 
+    
+    /* Define uma largura fixa de 200 pixels para que ambos os campos tenham exatamente o mesmo tamanho */
+    width: 200px; 
+    
+    /* Arredonda levemente os cantos das caixas de texto em 4 pixels */
+    border-radius: 4px;
+    
+    /* PROPRIEDADE OBRIGATÓRIA DO EXERCÍCIO 7: Cria uma borda com espessura de 2 pixels, linha contínua (solid), na cor azul escuro */
+    border: 2px solid #0056b3; 
+    
+/* Fecha as regras dos campos de entrada */
+}

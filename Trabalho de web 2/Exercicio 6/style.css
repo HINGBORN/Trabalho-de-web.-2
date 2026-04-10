@@ -1,0 +1,53 @@
+/* Seleciona a tela inteira (o corpo do site) */
+body { 
+    
+    /* Define a fonte padrão dos textos como Arial (ou similar) */
+    font-family: Arial, sans-serif; 
+    
+    /* Dá um espaço de 20 pixels nas bordas da tela para o conteúdo não ficar espremido */
+    padding: 20px; 
+    
+/* Fecha as regras do body */
+}
+
+/* Seleciona as caixas interativas ('details') no seu estado normal/fechado */
+details {
+    
+    /* Define um fundo cinza bem clarinho para a caixa da pergunta */
+    background-color: #f9f9f9; 
+    
+    /* Cria um espaço interno de 10 pixels para o texto não encostar nas bordas da caixa */
+    padding: 10px; 
+    
+    /* Dá um espaço de 10 pixels embaixo de cada caixa, separando uma pergunta da outra */
+    margin-bottom: 10px; 
+    
+    /* Arredonda levemente os cantos da caixa em 5 pixels */
+    border-radius: 5px;
+    
+    /* PROPRIEDADE OBRIGATÓRIA DO EXERCÍCIO 6: Cria uma animação. Quando a cor de fundo mudar, ela não muda de soco, ela transiciona suavemente durante 0.4 segundos */
+    transition: background-color 0.4s ease; 
+    
+/* Fecha as regras da caixa de detalhes */
+}
+
+/* Um seletor avançado: Só aplica essas regras quando a tag 'details' estiver com o atributo 'open' (ou seja, quando o usuário clicar para abrir) */
+details[open] { 
+    
+    /* Muda a cor de fundo para um azul clarinho. Graças ao 'transition' lá de cima, essa mudança de cor será animada e suave! */
+    background-color: #e0f7fa; 
+    
+/* Fecha a regra de quando a caixa está aberta */
+}
+
+/* Seleciona apenas os títulos clicáveis das perguntas */
+summary { 
+    
+    /* Deixa o texto da pergunta em negrito para dar destaque */
+    font-weight: bold; 
+    
+    /* Muda o cursor do mouse de uma 'setinha' para uma 'mãozinha', indicando claramente para o usuário que aquele texto é clicável */
+    cursor: pointer; 
+    
+/* Fecha as regras dos títulos clicáveis */
+}

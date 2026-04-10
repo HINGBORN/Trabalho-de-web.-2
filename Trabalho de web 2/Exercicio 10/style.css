@@ -1,0 +1,71 @@
+/* Seleciona o corpo da página para configurações gerais */
+body { 
+    
+    /* Define a fonte padrão como Arial ou outra fonte sem serifa do sistema */
+    font-family: Arial, sans-serif; 
+    
+    /* Dá um respiro interno de 20 pixels nas bordas da tela inteira */
+    padding: 20px; 
+    
+/* Fecha as regras do body */
+}
+
+/* Seleciona a caixa inteira do nosso depoimento ('blockquote') */
+.depoimento { 
+    
+    /* Cria uma borda grossa de 5 pixels, contínua e cinza, APENAS no lado esquerdo. Esse é um truque clássico de design para destacar citações */
+    border-left: 5px solid #ccc; 
+    
+    /* Adiciona um espaço interno: 10 pixels em cima/embaixo e 20 pixels nas laterais, para o texto não colar na borda esquerda que acabamos de criar */
+    padding: 10px 20px; 
+    
+    /* Define a cor de fundo da caixa de citação como um cinza bem clarinho */
+    background-color: #f9f9f9; 
+    
+    /* Cria um espaço de 20 pixels embaixo do depoimento, caso fôssemos adicionar outro logo abaixo */
+    margin-bottom: 20px; 
+    
+/* Fecha as regras da caixa de depoimento */
+}
+
+/* Seleciona especificamente o texto da frase do cliente */
+.texto-depoimento {
+    
+    /* PROPRIEDADE OBRIGATÓRIA DO EXERCÍCIO 10: Deixa a fonte em itálico (deitada), o que é o padrão visual para citações */
+    font-style: italic; 
+    
+    /* Aumenta o tamanho da letra da citação para 18 pixels, dando destaque ao que foi dito */
+    font-size: 18px;
+    
+/* Fecha as regras do texto do depoimento */
+}
+
+/* Seleciona a caixa que guarda a foto e o nome do cliente */
+.cliente { 
+    
+    /* Ativa o Flexbox. Isso faz com que a foto e o nome, que normalmente ficariam um embaixo do outro, fiquem lado a lado */
+    display: flex; 
+    
+    /* Alinha a foto e o nome verticalmente no centro (garante que o nome fique no meio da altura da foto) */
+    align-items: center; 
+    
+    /* Uma propriedade moderna do Flexbox: cria um vão (espaço) exato de 10 pixels entre a foto e o nome */
+    gap: 10px; 
+    
+/* Fecha as regras da área do cliente */
+}
+
+/* Seleciona EXATAMENTE a imagem que está dentro da classe '.cliente' */
+.cliente img { 
+    
+    /* Força a largura da foto para 50 pixels */
+    width: 50px; 
+    
+    /* Força a altura da foto para 50 pixels, criando um quadrado perfeito */
+    height: 50px; 
+    
+    /* Arredonda as bordas do quadrado em 50%, transformando a foto em um círculo perfeito */
+    border-radius: 50%; 
+    
+/* Fecha as regras da foto do cliente */
+}

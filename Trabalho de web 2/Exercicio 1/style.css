@@ -1,0 +1,29 @@
+/* Seleciona a tag 'body' (o corpo da página) para aplicar as regras visuais abaixo a toda a tela */
+body {
+    
+    /* Puxa uma imagem de um link externo para ser o plano de fundo da página */
+    background-image: url('https://picsum.photos/id/20/1000/600');
+    
+    /* Faz com que a imagem de fundo estique ou encolha para cobrir toda a tela, sem perder a proporção */
+    background-size: cover;
+    
+    /* Centraliza a imagem de fundo, garantindo que o meio dela seja o foco */
+    background-position: center;
+    
+    /* Define a cor de todo o texto da página como preto usando o sistema RGB (0 vermelho, 0 verde, 0 azul) */
+    color: rgb(0, 0, 0);
+    
+    /* Cria um espaço interno na página: 100 pixels no topo/base e 40 pixels nas laterais direita/esquerda */
+    padding: 100px 40px;
+    
+    /* Arredonda as bordas do elemento em 10 pixels (no 'body', o efeito é aplicado nas bordas da tela inteira) */
+    border-radius: 10px;
+    
+    /* Adiciona uma sombra no texto: 2px para a direita, 2px para baixo, 4px de desfoque, preta com 70% de transparência */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    
+    /* Alinha todos os textos (título e parágrafo) no centro da tela */
+    text-align: center;
+    
+/* Fecha o bloco de regras do 'body' */
+}

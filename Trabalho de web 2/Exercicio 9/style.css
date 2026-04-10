@@ -1,0 +1,47 @@
+/* Seleciona o corpo da página para aplicar o estilo geral do nosso "Dark Mode" */
+body { 
+    
+    /* Define a fonte dos textos como Arial (ou outra sem serifa do sistema) */
+    font-family: Arial, sans-serif; 
+    
+    /* Dá um respiro interno de 20 pixels nas bordas da tela inteira */
+    padding: 20px;
+    
+    /* Aplica um fundo cinza bem escuro para a página */
+    background-color: #222;
+    
+    /* Define a cor de todos os textos gerais como um tom de azul muito claro/branco */
+    color: aliceblue; 
+    
+/* Fecha as regras do body */
+}
+
+/* Seleciona a caixa que agrupa cada tarefa individualmente */
+.tarefa { 
+    
+    /* Cria um espaço de 10 pixels embaixo de cada tarefa, separando uma da outra na lista */
+    margin-bottom: 10px; 
+    
+/* Fecha as regras da tarefa */
+}
+
+/* Seleciona especificamente os textos que têm a classe 'concluida' (nossa primeira tarefa) */
+.concluida { 
+    
+    /* PROPRIEDADE OBRIGATÓRIA DO EXERCÍCIO 9: Cria uma linha cortando o texto ao meio, dando o efeito visual de item "riscado" da lista */
+    text-decoration: line-through; 
+    
+    /* Muda a cor do texto riscado para cinza, deixando-o com aspecto de "desativado" em relação aos itens pendentes */
+    color: gray; 
+    
+/* Fecha as regras dos itens concluídos */
+}
+
+/* Seleciona a classe que agrupa os botões de editar e excluir */
+.botoes { 
+    
+    /* Empurra os botões 10 pixels para a direita, afastando-os um pouco do texto da tarefa */
+    margin-left: 10px; 
+    
+/* Fecha as regras do grupo de botões */
+}

@@ -1,0 +1,56 @@
+/* Seleciona a tela inteira (o corpo do site) para aplicar os estilos gerais */
+body { 
+    
+    /* Define a fonte padrão como Arial (ou outra fonte sem serifa do sistema) */
+    font-family: Arial, sans-serif; 
+    
+    /* Dá um respiro interno de 20 pixels nas bordas da tela */
+    padding: 20px;
+    
+    /* Define a cor de fundo como um cinza escuro (Dark Mode) */
+    background-color: #222;
+    
+    /* Define a cor de todos os textos gerais como um tom de azul muito claro, quase branco */
+    color: aliceblue; 
+    
+/* Fecha as regras do body */
+}
+
+/* Seleciona a caixa principal da nossa promoção */
+.oferta { 
+    
+    /* Cria uma borda de 1 pixel, tracejada (dashed) e de cor cinza escura, simulando o picote de um cupom de desconto físico */
+    border: 1px dashed #333; 
+    
+    /* Adiciona um espaço interno de 15 pixels para o conteúdo não grudar na borda do cupom */
+    padding: 15px; 
+    
+    /* Define a largura fixa do cartão da oferta em 250 pixels */
+    width: 250px; 
+    
+/* Fecha as regras do cartão de oferta */
+}
+
+/* Seleciona especificamente o texto do preço antigo (que está dentro da tag <del>) */
+.preco-antigo {
+    
+    /* PROPRIEDADE CSS OBRIGATÓRIA DO EXERCÍCIO 13: Muda a cor do texto riscado para vermelho, indicando psicologicamente que aquele valor alto foi "rejeitado" */
+    color: #ff0000; 
+    
+/* Fecha as regras do preço antigo */
+}
+
+/* Seleciona o texto do preço novo, que é o grande atrativo da promoção */
+.preco-novo { 
+    
+    /* Define a cor do preço novo como verde, transmitindo a ideia de algo positivo, vantajoso e liberado */
+    color: #28a745; 
+    
+    /* Deixa a fonte em negrito para dar bastante peso e chamar a atenção dos olhos do cliente */
+    font-weight: bold; 
+    
+    /* Aumenta o tamanho da fonte do preço novo para 20 pixels, destacando-o ainda mais em relação ao preço antigo */
+    font-size: 20px; 
+    
+/* Fecha as regras do preço novo */
+}
