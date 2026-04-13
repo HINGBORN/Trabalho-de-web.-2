@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManTech - Portfolio Interativo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Layout principal: cabeçalho fixo, seções de conteúdo e rodapé -->
+    <header class="navbar">
+        <!-- Logo do site com parte do nome em destaque -->
+        <div class="logo">Man<span>Tech</span></div>
+        <!-- Navegação interna para as seções da página -->
+        <nav>
+            <a href="#intro">Home</a>
+            <a href="#portfolio">Projetos</a>
+            <a href="#produto">Loja</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- 1. Intro - OBRIGATÓRIO: h1 e background-image -->
+    <!-- Seção principal de destaque com título e botão de ação -->
+    <section id="intro" class="hero">
+        <!-- Conteúdo principal da hero com título, descrição e CTA -->
+        <div class="hero-content">
+            <h1>Sistemas de Alta Performance</h1>
+            <p>Desenvolvimento focado em escalabilidade e experiência do usuário.</p>
+            <a href="#portfolio" class="btn-primary">Explorar Projetos</a>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <!-- 2. Perfil - OBRIGATÓRIO: img e border-radius -->
+        <!-- Apresentação do profissional com foto e descrição breve -->
+        <section id="perfil" class="card-section">
+            <!-- Cartão de perfil com foto, nome e links sociais -->
+            <div class="perfil-header">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&h=200&auto=format&fit=crop"
+                    alt="Marcos" class="avatar">
+                <div class="perfil-info">
+                    <h2>Marcos Oliveira</h2>
+                    <p>Engenheiro de Software & Arquiteto de Soluções</p>
+                    <div class="social-links">
+                        <a href="#">GitHub</a> • <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Portfólio - OBRIGATÓRIO: div e grid -->
+        <!-- Galeria de projetos usando layout em grade -->
+        <section id="portfolio">
+            <h2 class="section-title">3. Portfólio</h2>
+            <!-- Galeria de projetos com cards organizados em grid -->
+            <div class="portfolio-grid">
+                <div class="grid-item"><img src="API Backend.jpg"><span>API Backend</span></div>
+                <div class="grid-item"><img src="Cyber Security.jpg"><span>Cyber Security</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Blog - OBRIGATÓRIO: ul e list-style -->
+        <!-- Lista de posts com estilo de blog -->
+        <section id="blog">
+            <h2 class="section-title">4. Blog Tech</h2>
+            <!-- Lista de posts com estilo de blog usando <ul> -->
+            <ul class="blog-posts">
+                <li>
+                    <div class="post-content">
+                        <h3>O futuro do TypeScript em 2026</h3>
+                        <p>Novas funcionalidades como tipos nominais, inferência ainda mais precisa e integração com ferramentas de build garantem código mais seguro e previsível.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-content">
+                        <h3>Como a arquitetura de microsserviços acelera projetos</h3>
+                        <p>Distribuir responsabilidades em serviços independentes melhora a escalabilidade, simplifica deploys e reduz o tempo necessário para lançar novas features.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <div class="dual-section">
+            <!-- 5. Contato - OBRIGATÓRIO: form e box-shadow -->
+            <!-- Formulário de contato com sombra para destacar no layout. -->
+            <section id="contato" class="contact-card">
+                <!-- Formulário de contato com feedback visual após envio -->
+                <h2>5. Contato</h2>
+                <form id="formContato" class="modern-form">
+                    <input type="text" id="nome" placeholder="Seu Nome" required>
+                    <textarea id="msg" placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit">Enviar Mensagem</button>
+                    <p id="feedbackContato" class="feedback-msg">Mensagem enviada com sucesso! ✅</p>
+                </form>
+            </section>
+
+            <!-- 7. Login - OBRIGATÓRIO: input e border -->
+            <!-- Bloco de login com campos e botão, ilustrando input com borda. -->
+            <section id="login" class="login-card">
+                <!-- Exemplo de área de login com campos de entrada com borda -->
+                <h2>7. Login</h2>
+                <div class="login-group">
+                    <input type="text" placeholder="Usuário" class="login-field">
+                    <input type="password" placeholder="Senha" class="login-field">
+                    <button class="btn-login" onclick="alert('Sistema de login em manutenção!')">Acessar</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- 6. FAQ - OBRIGATÓRIO: details e transition -->
+        <!-- Perguntas frequentes com painel expansível -->
+        <section id="faq">
+            <h2 class="section-title">6. FAQ</h2>
+            <!-- Acordeões expansíveis com perguntas e respostas -->
+            <details class="accordion">
+                <summary>Trabalha com projetos internacionais?</summary>
+                <p>Sim, possuímos experiência com clientes da Europa e EUA. Atuamos com equipes remotas, garantindo entregas alinhadas a diferentes fusos horários.</p>
+            </details>
+            <details class="accordion">
+                <summary>Quais tecnologias são usadas em seus projetos?</summary>
+                <p>Trabalhamos com React, TypeScript, Node.js, Python, além de práticas modernas de DevOps e segurança para projetos web e APIs.</p>
+            </details>
+        </section>
+
+        <!-- 8. Produto - OBRIGATÓRIO: button e box-sizing -->
+        <!-- Apresentação de produto com botão e box-sizing aplicado ao botão. -->
+        <section id="produto" class="product-showcase">
+            <!-- Card de produto com imagem e detalhes lado a lado -->
+            <div class="product-img">
+                <img src="Monitor gamer 34_ UltraWide.jpg" alt="Monitor">
+            </div>
+            <div class="product-details">
+                <h2>8. Monitor Gamer 34" UltraWide</h2>
+                <p class="desc">Qualidade 4K com taxa de atualização de 165Hz.</p>
+                <p class="price">R$ 2.890,00</p>
+                <!-- O botão chama uma função no JS -->
+                <button class="buy-now" onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <!-- 9. Tarefas / 10. Testemunhos -->
+        <!-- Bloco duplo com checklist de tarefas e depoimento do cliente. -->
+        <div class="dual-section">
+            <section id="tarefas" class="card-minimal">
+                <!-- Lista de tarefas com checkbox para demonstrar estilo de itens concluídos -->
+                <h2>9. Tarefas</h2>
+                <div class="todo-list">
+                    <div><input type="checkbox" id="t1" checked> <label for="t1">Otimizar Banco de Dados</label></div>
+                    <div><input type="checkbox" id="t2"> <label for="t2">Revisar arquitetura de APIs</label></div>
+                    <div><input type="checkbox" id="t3"> <label for="t3">Documentar jornada do usuário</label></div>
+                </div>
+            </section>
+
+            <section id="testemunhos" class="card-minimal">
+                <!-- Depoimento do cliente formatado como citação moderna -->
+                <h2>10. Depoimentos</h2>
+                <blockquote class="modern-quote">
+                    "O melhor suporte técnico que já contratei. A equipe entregou prontamente e trouxe melhorias reais ao nosso sistema."
+                    <cite>— Carlos Silva, Diretor de TI</cite>
+                </blockquote>
+            </section>
+        </div>
+
+        <!-- 12. Galeria -->
+        <!-- Galeria de imagens com legenda usando figure/figcaption. -->
+        <section id="galeria">
+            <h2 class="section-title">12. Nosso Estúdio</h2>
+            <!-- Galeria com figura e legenda para apresentar imagens do estúdio -->
+            <div class="gallery-wrapper">
+                <figure class="gallery-item">
+                    <img src="Hardware Lab.jpg">
+                    <figcaption>Hardware Lab</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 13. Promoção - OBRIGATÓRIO: del e color -->
+        <!-- Banner promocional mostrando preço antigo com <del> e preço atual colorido. -->
+        <section id="promocoes" class="promo-banner">
+            <h2>13. Promoção Exclusiva</h2>
+            <!-- Banner de promoção com preço antigo riscado e preço atual em destaque -->
+            <div class="promo-container">
+                <img src="Teclado Mecânico RGB Pro.jpg"
+                    alt="Teclado Mecânico" class="promo-img">
+                <div class="promo-text">
+                    <h3>Teclado Mecânico RGB Pro</h3>
+                    <p>De: <del class="old-price">R$ 599</del></p>
+                    <p>Por apenas: <span class="new-price">R$ 299</span></p>
+                    <button class="buy-now" onclick="adicionarCarrinho()">Aproveitar Oferta</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 14. Equipe - OBRIGATÓRIO: div e flex -->
+        <!-- Membros da equipe apresentados em cards flexíveis. -->
+        <section id="equipe">
+            <h2 class="section-title">14. Nossa Equipe</h2>
+            <!-- Cards responsivos de membros da equipe com dados para interação -->
+            <div class="team-flex">
+                <div class="member" data-name="André Santos" data-role="DevOps Engineer" data-bio="Especialista em automação, infraestrutura e pipelines CI/CD. Garante estabilidade e entrega contínua para projetos complexos.">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=240&h=240&auto=format&fit=crop" alt="André Santos">
+                    <h4>André Santos</h4>
+                    <p>DevOps Engineer</p>
+                </div>
+                <div class="member" data-name="Lucas Lima" data-role="Frontend Lead" data-bio="Líder de frontend com foco em interfaces modernas e acessíveis. Coordena o design e a experiência do usuário.">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=240&h=240&auto=format&fit=crop" alt="Lucas Lima">
+                    <h4>Lucas Lima</h4>
+                    <p>Frontend Lead</p>
+                </div>
+            </div>
+            <!-- Detalhes da equipe que aparecem ao clicar em um membro -->
+            <div class="team-details hidden">
+                <h3>Equipe em destaque</h3>
+                <p class="team-detail-text">Clique em um membro para ver mais detalhes sobre sua experiência na equipe.</p>
+            </div>
+        </section>
+
+        <!-- 15. Lançamento - OBRIGATÓRIO: time e animation -->
+        <!-- Bloco de lançamento com temporizador animado e botão para mostrar mais detalhes. -->
+        <section id="lancamento" class="launch-box">
+            <!-- Seção de lançamento com temporizador animado e botão de ação -->
+            <h2>15. Lançamento da Nova API</h2>
+            <time class="glow-timer">00:15:30</time>
+            <p class="launch-description">Estamos preparando uma atualização de API com performance superior, segurança reforçada e suportes para integrações modernas. Fique ligado para conhecer todos os recursos assim que eles estiverem disponíveis.</p>
+            <button type="button" id="showApiBtn" class="secondary-btn">Quero saber mais</button>
+        </section>
+
+        <!-- Seção de detalhes da API, inicialmente oculta até o clique em 'Quero saber mais'. -->
+        <!-- Mostra a descrição da API somente após o usuário demonstrar interesse. -->
+        <section id="api-info" class="api-info hidden">
+            <!-- Informação adicional sobre a nova API, visível somente após clique -->
+            <h2>Sobre a nova API</h2>
+            <p>Esta API será projetada para dar mais velocidade e confiabilidade aos seus sistemas, com foco em:</p>
+            <ul>
+                <li>Endpoints rápidos e escaláveis para grandes volumes de dados.</li>
+                <li>Autenticação segura com tokens JWT e suporte a OAuth.</li>
+                <li>Documentação clara e exemplos práticos para desenvolvedores.</li>
+                <li>Integração com ferramentas modernas de análise e notificações.</li>
+            </ul>
+            <p>Em breve, teremos um lançamento oficial com testes automatizados, monitoramento e suporte técnico dedicado.</p>
+        </section>
+
+        <!-- 11. Mapa do Site - OBRIGATÓRIO: ul e text-indent -->
+        <!-- Rodapé com links internos para navegação entre seções da página. -->
+        <footer class="footer">
+            <!-- Rodapé com mapa do site e navegação rápida -->
+            <div class="sitemap-container">
+                <h3>11. Mapa do Site</h3>
+                <ul class="sitemap-list">
+                    <li><a href="#intro" class="site-btn">Início</a></li>
+                    <li><a href="#perfil" class="site-btn">Perfil Profissional</a></li>
+                    <li><a href="#portfolio" class="site-btn">Meus Trabalhos</a></li>
+                    <li><a href="#produto" class="site-btn">Loja Online</a></li>
+                    <li><a href="#contato" class="site-btn">Contato Direto</a></li>
+                </ul>
+            </div>
+            <p style="margin-top: 30px; opacity: 0.5;">&copy; 2026 ManTech Solutions.</p>
+        </footer>
+
+    </main>
+
+    <!-- Script Interativo -->
+    <script>
+        // Função para o botão do Carrinho
+        // Exibe um alerta simples quando o usuário clica em 'Adicionar ao Carrinho'.
+        function adicionarCarrinho() {
+            alert("🛒 Sucesso! O item foi adicionado ao seu carrinho.");
+        }
+
+        // Função para o Formulário de Contato
+        // Escuta o envio do formulário, impede recarregamento e exibe feedback visual. 
+        document.getElementById('formContato').addEventListener('submit', function (e) {
+            e.preventDefault(); // Impede a página de recarregar
+
+            // Mostra a mensagem de feedback
+            const feedback = document.getElementById('feedbackContato');
+            feedback.style.display = 'block';
+
+            // Limpa o formulário
+            this.reset();
+
+            // Esconde a mensagem depois de 3 segundos
+            setTimeout(() => {
+                feedback.style.display = 'none';
+            }, 3000);
+        });
+
+        // Interação da equipe
+        // Cada card de membro pode ser clicado para revelar mais informações sobre o colaborador. 
+        const teamCards = document.querySelectorAll('.member');
+        const teamDetails = document.querySelector('.team-details');
+        const teamDetailText = document.querySelector('.team-detail-text');
+
+        teamCards.forEach(card => {
+            card.addEventListener('click', () => {
+                teamCards.forEach(item => item.classList.remove('active'));
+                card.classList.add('active');
+
+                const name = card.dataset.name;
+                const role = card.dataset.role;
+                const bio = card.dataset.bio;
+
+                teamDetails.querySelector('h3').textContent = name;
+                teamDetailText.innerHTML = `<strong>${role}</strong><br>${bio}`;
+                teamDetails.classList.remove('hidden');
+                teamDetails.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Mostrar detalhes da nova API apenas ao clicar
+        const showApiBtn = document.getElementById('showApiBtn');
+        const apiInfo = document.getElementById('api-info');
+
+        showApiBtn.addEventListener('click', () => {
+            apiInfo.classList.remove('hidden');
+            apiInfo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    </script>
+
+</body>
+
+</html>
