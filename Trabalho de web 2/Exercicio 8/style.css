@@ -1,0 +1,74 @@
+/* Seleciona o corpo da página para aplicar as configurações gerais */
+body { 
+    
+    /* Define a fonte padrão como Arial ou outra sem serifa */
+    font-family: Arial, sans-serif; 
+    
+    /* Cria um respiro de 20 pixels nas margens da tela */
+    padding: 20px;
+    
+    /* Define um fundo escuro (Dark Mode) para a página inteira */
+    background-color: #222;
+    
+    /* Define a cor dos textos gerais como um azul bem claro/branco */
+    color: aliceblue; 
+    
+/* Fecha as regras do body */
+}
+
+/* Seleciona a caixa principal que envolve o produto */
+.produto-card { 
+    
+    /* Trava a largura da caixa do produto em exatos 300 pixels */
+    width: 300px; 
+    
+    /* Cria uma borda de 1 pixel, sólida e na cor cinza claro */
+    border: 1px solid #ccc; 
+    
+    /* Adiciona um espaço interno de 20 pixels para o conteúdo não grudar na borda da caixa */
+    padding: 20px; 
+    
+    /* Centraliza todo o texto e conteúdo (incluindo a imagem) dentro do cartão */
+    text-align: center; 
+    
+/* Fecha as regras do cartão do produto */
+}
+
+/* Seleciona o nosso botão de compra */
+.botao-comprar {
+    
+    /* Define a cor de fundo do botão como um verde chamativo */
+    background-color: #28a745; 
+    
+    /* Força a cor do texto do botão a ser branca */
+    color: white; 
+    
+    /* Adiciona um espaço interno de 15 pixels, deixando o botão mais "gordinho" e fácil de clicar */
+    padding: 15px; 
+    
+    /* Faz o botão esticar para ocupar 100% da largura do cartão onde ele está dentro */
+    width: 100%; 
+    
+    /* Aumenta o tamanho da fonte do botão para 16 pixels */
+    font-size: 16px; 
+    
+    /* Remove qualquer borda padrão que o navegador costuma colocar em botões */
+    border: none; 
+    
+    /* Muda o cursor do mouse para uma 'mãozinha' quando passar por cima, indicando que é clicável */
+    cursor: pointer;
+    
+    /* PROPRIEDADE OBRIGATÓRIA DO EXERCÍCIO 8: Garante que o 'padding' que adicionamos não faça o botão ultrapassar os 100% de largura, calculando a borda e o preenchimento para dentro da caixa */
+    box-sizing: border-box; 
+    
+/* Fecha as regras do botão */
+}
+
+/* Pseudo-classe ':hover' - Estas regras SÓ são ativadas quando o usuário coloca o mouse EM CIMA do botão */
+.botao-comprar:hover { 
+    
+    /* Muda a cor de fundo para um verde um pouco mais escuro, criando um efeito visual de interação */
+    background-color: #218838; 
+    
+/* Fecha as regras de interação do botão */
+}

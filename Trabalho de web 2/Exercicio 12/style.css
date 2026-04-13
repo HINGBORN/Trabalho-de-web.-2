@@ -1,0 +1,74 @@
+/* Seleciona o corpo da página para aplicar as configurações gerais */
+body { 
+    
+    /* Define a fonte padrão como Arial ou outra sem serifa */
+    font-family: Arial, sans-serif; 
+    
+    /* Centraliza todos os textos gerais da página */
+    text-align: center; 
+    
+    /* Aplica um fundo cinza bem escuro (estilo Dark Mode) */
+    background-color: #222;
+    
+    /* Define a cor dos textos como um tom de azul muito claro/branco */
+    color: aliceblue; 
+    
+/* Fecha as regras do body */
+}
+
+/* Seleciona a caixa que agrupa todas as imagens */
+.galeria {
+    
+    /* PROPRIEDADE OBRIGATÓRIA DO EXERCÍCIO 12: Ativa o Flexbox, um modelo de layout muito poderoso que coloca os elementos lado a lado de forma inteligente */
+    display: flex; 
+    
+    /* Centraliza os itens (as fotos) horizontalmente no meio da tela */
+    justify-content: center; 
+    
+    /* Cria um espaçamento exato de 20 pixels entre cada foto */
+    gap: 20px; 
+    
+    /* Fundamental para telas menores: permite que as fotos "quebrem" para a linha de baixo se não houver espaço suficiente na tela (responsividade) */
+    flex-wrap: wrap;
+    
+/* Fecha as regras da galeria */
+}
+
+/* Seleciona a tag 'figure' (o "quadro" que engloba a foto e a legenda) */
+figure { 
+    
+    /* Remove as margens externas padrão que o navegador costuma colocar */
+    margin: 0; 
+    
+    /* Cria uma borda bem fininha de 1 pixel em cinza claro, parecendo um quadro de foto polaroid */
+    border: 1px solid #ddd; 
+    
+    /* Dá um respiro interno de 5 pixels para a foto não colar na borda do quadro */
+    padding: 5px; 
+    
+/* Fecha as regras do 'figure' */
+}
+
+/* Seleciona APENAS as imagens que estão dentro da tag 'figure' */
+figure img { 
+    
+    /* Trava a largura da miniatura em 150 pixels */
+    width: 150px; 
+    
+    /* Transforma a setinha do mouse em uma "mãozinha", indicando claramente que a foto é clicável */
+    cursor: pointer; 
+    
+    /* Cria uma animação suave de 0.3 segundos. Sem isso, qualquer efeito visual aconteceria de forma muito brusca */
+    transition: 0.3s; 
+    
+/* Fecha as regras da imagem padrão */
+}
+
+/* Pseudo-classe ':hover' - Só é ativada quando o usuário coloca o mouse EM CIMA da imagem */
+figure img:hover { 
+    
+    /* Altera a forma da imagem: escala (aumenta) o tamanho original em 5%, criando um efeito visual de zoom muito elegante! */
+    transform: scale(1.05); 
+    
+/* Fecha as regras de interação do mouse sobre a imagem */
+}
